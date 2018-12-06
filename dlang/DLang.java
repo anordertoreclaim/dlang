@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class DLang {
-  private static final AstPrinter printer = new AstPrinter();
+  //private static final AstPrinter printer = new AstPrinter();
   static boolean hadError = false;
   static boolean hadRuntimeError = false;
 
@@ -46,9 +46,9 @@ public class DLang {
     List<Token> tokens = scanner.scanTokens();
     Parser parser = new Parser(tokens);
     List<Stmt> statements = parser.parse();
-    for(Stmt stmt : statements) {
-        System.out.println(printer.print(stmt));
-    }
+    //for(Stmt stmt : statements) {
+      //  System.out.println(printer.print(stmt));
+    //}
     if (hadError) return;
 
     Interpreter interpreter = new Interpreter();
