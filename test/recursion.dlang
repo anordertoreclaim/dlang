@@ -1,0 +1,10 @@
+var fact := func(n) is
+ 
+	if n = 0 then 
+		return 1;
+	end;
+ 	return n*fact(n-1);
+ 	end;
+
+ var f := fact (3)
+ print f;

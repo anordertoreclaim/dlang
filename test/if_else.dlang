@@ -1,0 +1,9 @@
+var f := func(n) is
+    if n>10 then
+    	return "yes";
+    else
+	return "no";
+    end;
+end;
+
+print f(15);

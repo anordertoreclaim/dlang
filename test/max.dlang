@@ -1,0 +1,19 @@
+var arr := [14, 11, 98];
+var arr_size := 3;
+var m;
+
+var max := func is
+
+	m:=arr[1];
+
+	for i in 1 .. arr_size + 1
+	loop
+        if arr[i] > m then
+            m := arr[i];
+        end;
+    end;
+end;
+
+max();
+
+print m;

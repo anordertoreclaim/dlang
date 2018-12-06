@@ -1,0 +1,11 @@
+var arr := [1,2,12];
+print arr;
+arr := [7, 8, arr[3]*2];
+print arr;
+arr[2] := arr[2] - 1;
+print arr;
+var arr2 := [1, 1, 1];
+print "Concatenation";
+print arr+arr2;
+arr[1] := readString;
+print arr;

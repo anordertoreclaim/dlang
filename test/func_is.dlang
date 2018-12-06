@@ -1,0 +1,8 @@
+var f := func(a) is
+    var g = func is
+        a := a * 2;
+    end;
+    print a;
+end;
+
+f(4);
